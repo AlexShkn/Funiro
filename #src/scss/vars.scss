@@ -1,0 +1,42 @@
+@import './mixins';
+
+:root {
+	// ЦВЕТА
+	--color-main: #1c242a;
+	--color-black: #000;
+	--color-white: #ffffff;
+	--color-gray: #333333;
+	--color-bg: #1c242a;
+
+	// --color-gold: #bb9c66;
+	// --color-main-hover: #31343c;
+	// --color-accent: #f14f4f;
+	// --color-accent-hover: #cc4949;
+	// --color-border: rgba(255, 255, 255, 0.5);
+	// --color-btn-active: #8c2828;
+
+	// ОТСТУПЫ
+	--main-offset: 40px;
+	--second-offset: 20px;
+	--small-offset: 10px;
+	--big-offset: 60px;
+
+	// // ШРИФТЫ
+	// --font-family: 'Intro', sans-serif;
+	// --middle-high-bold: 700 30px / 140% var(--font-family);
+	// --prehigh-book: 400 24px / 24px var(--font-family);
+	// --prehigh-regular: 600 20px / 20px var(--font-family);
+	// --middle-book: 400 16px / 140% var(--font-family);
+	// --middle-regular: 600 16px / 140% var(--font-family);
+	// --small-book: 400 14px / 140% var(--font-family);
+}
+
+// @include mobile {
+// 	:root {
+// 		--grid-gap: 10px;
+// 		--main-offset: 20px;
+// 		--second-offset: 14px;
+// 		--small-offset: 8px;
+// 		--big-offset: 30px;
+// 	}
+// }
