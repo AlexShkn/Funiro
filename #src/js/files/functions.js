@@ -13,9 +13,6 @@ if (isMobile.any()) {
 	document.querySelector('html').classList.add('_touch');
 }
 
-// Получить цифры из строки
-//parseInt(itemContactpagePhone.replace(/[^\d]/g, ''))
-
 function testWebP(callback) {
 	var webP = new Image();
 	webP.onload = webP.onerror = function () {

@@ -40,9 +40,7 @@ async function form_submit(e) {
 		// If test
 		if (form.hasAttribute('data-test')) {
 			e.preventDefault();
-			if (message) {
-				popup_open(message + '-message');
-			}
+			popup_open(message + '-message');
 			form_clean(form);
 		}
 	} else {
@@ -142,8 +140,7 @@ function form_clean(form) {
 	}
 }
 
-//viewPass
-let viewPass = document.querySelectorAll('._viewpass');
+let viewPass = document.querySelectorAll('.form__viewpass');
 for (let index = 0; index < viewPass.length; index++) {
 	const element = viewPass[index];
 	element.addEventListener("click", function (e) {
@@ -364,14 +361,8 @@ function inputs_init(inputs) {
 					input_focus_add(input);
 					input.value = '';
 				}
-				if (input.getAttribute('data-type') === "pass") {
-					if (input.parentElement.querySelector('._viewpass')) {
-						if (!input.parentElement.querySelector('._viewpass').classList.contains('_active')) {
-							input.setAttribute('type', 'password');
-						}
-					} else {
-						input.setAttribute('type', 'password');
-					}
+				if (input.getAttribute('data-type') === "pass" && !input.parentElement.querySelector('.form__viewpass').classList.contains('_active')) {
+					input.setAttribute('type', 'password');
 				}
 				if (input.classList.contains('_date')) {
 					/*
