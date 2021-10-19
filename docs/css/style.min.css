@@ -276,6 +276,12 @@ body._lock {
     transform: translate(-50%, 0px);
   }
 }
+@media (max-width: 479.98px) {
+  .header__logo {
+    position: absolute;
+    left: 90px;
+  }
+}
 .header__search {
   padding-right: 32px;
 }
@@ -296,13 +302,31 @@ body._lock {
   .menu__body {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100%;
     overflow: auto;
     background-color: #fcf8f3;
     transition: left 0.3s ease 0s;
     padding: 70px 15px 30px 15px;
+  }
+  .menu__body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s ease 0s;
+    background-color: #fcf8f3;
+    z-index: 2;
+  }
+  .menu__body._active {
+    left: 0;
+  }
+  .menu__body._active::before {
+    content: "";
+    left: 0;
   }
 }
 @media (min-width: 767.98px) {
@@ -547,8 +571,8 @@ body._lock {
   .icon-menu {
     display: block;
     position: absolute;
-    top: 18px;
-    right: 10px;
+    top: 16px;
+    left: 10px;
     width: 30px;
     height: 18px;
     cursor: pointer;
