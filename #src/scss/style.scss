@@ -39,7 +39,7 @@ $mainColor: #3a3a3a;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===================================
 @import 'null';
 body {
-	background: #f9f1e7;
+	background: #fcf8f3;
 	color: $mainColor;
 	&._lock {
 		overflow: hidden;

@@ -15,11 +15,6 @@
 		z-index: 50;
 	}
 
-	// .header__container
-
-	&__container {
-	}
-
 	// .header__body
 
 	&__body {
@@ -67,12 +62,6 @@
 			left: 90px;
 		}
 	}
-
-	// .header__menu
-
-	&__menu {
-	}
-
 	// .header__search
 
 	&__search {
@@ -80,20 +69,6 @@
 		@media (min-width: $md2+px) {
 			flex: 1 1 auto;
 		}
-	}
-
-	// .header__actions
-
-	&__actions {
-	}
-	// ._container
-
-	&_container {
-	}
-
-	// ._icon-search
-
-	&_icon-search {
 	}
 }
 .menu {
@@ -391,18 +366,6 @@
 			color: var(--color-white);
 		}
 	}
-
-	// .cart-header__body
-
-	&__body {
-	}
-
-	// .cart-header__list
-
-	&__list {
-	}
-}
-.cart-list {
 }
 
 .icon-menu {
