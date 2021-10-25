@@ -17,7 +17,7 @@
 //</FORM>====================================================================================================
 
 //<BUTTONS (a.btn+tab)>====================================================================================================
-.button {
+.btn {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
@@ -25,6 +25,14 @@
 	text-align: center;
 	transition: all 0.3s ease 0s;
 	min-height: 48px;
+	&_white {
+		background-color: var(--color-white);
+		color: var(--color-orange);
+		&:hover {
+			background-color: var(--color-orange);
+			color: var(--color-white);
+		}
+	}
 }
 //</BUTTONS>====================================================================================================
 
