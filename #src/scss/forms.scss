@@ -19,14 +19,12 @@
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&._fw {
-		width: 100%;
-	}
+	justify-content: center;
+	align-items: center;
+	padding: 0px 15px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	min-height: 48px;
 }
 //</BUTTONS>====================================================================================================
 
@@ -65,12 +63,12 @@
 			-webkit-box-orient: vertical;
 		}
 		&:before {
-			content: "";
+			content: '';
 			display: inline-block;
 			transition: all 0.3s ease 0s;
 			width: 11px;
 			height: 7px;
-			background: url("../img/icons/select.svg") center / 100% no-repeat;
+			background: url('../img/icons/select.svg') center / 100% no-repeat;
 		}
 	}
 	&__input {
@@ -122,9 +120,9 @@
 //</SELECT>====================================================================================================
 
 //<INPUT (inp+tab)>====================================================================================================
-input[type="text"],
-input[type="email"],
-input[type="tel"],
+input[type='text'],
+input[type='email'],
+input[type='tel'],
 textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -160,7 +158,7 @@ textarea.input {
 		opacity: 0;
 		visibility: hidden;
 		&:checked + .checkbox__text:before {
-			background: #fff url("../img/icons/check.svg") center no-repeat;
+			background: #fff url('../img/icons/check.svg') center no-repeat;
 		}
 	}
 	// .checkbox__text
@@ -174,7 +172,7 @@ textarea.input {
 		line-height: calc(20 / 16);
 		cursor: pointer;
 		&:before {
-			content: "";
+			content: '';
 			align-self: flex-start;
 			margin: 0px 14px 0px 0px;
 			flex: 0 0 20px;
@@ -242,7 +240,7 @@ textarea.input {
 		letter-spacing: -0.3px;
 		line-height: calc(20 / 16);
 		&:before {
-			content: "";
+			content: '';
 			align-self: flex-start;
 			margin: 0px 14px 0px 0px;
 			flex: 0 0 20px;
@@ -255,7 +253,7 @@ textarea.input {
 			border: 1px solid #a7a9ac;
 		}
 		&:after {
-			content: "";
+			content: '';
 			transition: all 0.3s ease 0s;
 			transform: scale(0);
 			width: 10px;
@@ -290,7 +288,7 @@ textarea.input {
 	position: relative;
 }
 .rating__body::before {
-	content: "★★★★★";
+	content: '★★★★★';
 	display: block;
 }
 .rating__active {
@@ -302,7 +300,7 @@ textarea.input {
 	overflow: hidden;
 }
 .rating__active::before {
-	content: "★★★★★";
+	content: '★★★★★';
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -344,7 +342,7 @@ textarea.input {
 		cursor: pointer;
 		&::before,
 		&::after {
-			content: "";
+			content: '';
 			position: absolute;
 			top: 50%;
 			left: 50%;

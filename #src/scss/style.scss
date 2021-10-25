@@ -39,7 +39,6 @@ $mainColor: #3a3a3a;
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===================================
 @import 'null';
 body {
-	background: #fcf8f3;
 	color: $mainColor;
 	&._lock {
 		overflow: hidden;
@@ -71,7 +70,9 @@ body {
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>===============
 @import './components/header';
 //===========MAIN===============================================
-// @import './components/promo';
+@import './components/main-slider';
+@import './components/advantages';
+@import './components/products';
 //===========MAIN===============================================
 @import './components/footer';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
@@ -88,5 +89,9 @@ body {
 //<ОСНОВНОЙ БЛОК>===============================================
 .page {
 	flex: 1 1 auto;
+	&__main-slider {
+	}
+	&__advantages {
+	}
 }
 //==============================================================
