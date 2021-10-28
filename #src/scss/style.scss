@@ -79,10 +79,10 @@ body {
 //===========MAIN===============================================
 @import './components/footer';
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>==============
-// @import './parts/popup';
+@import './parts/popup';
 // @import './parts/home';
 //@import "./parts/datepicker";
-//@import "/parts/lightgallery";
+@import './parts/lightgallery';
 //@import "./parts/pagging";
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>========
 @import 'forms';
